@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Completo - Delicious Food Spot</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/menu.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Delicious</a>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="carrito.html" class="cart-link"
+            ><i class="fas fa-shopping-cart"></i> Carrito</a
+          >
+        </li>
+        <li>
+          <a href="contact.html"><i class="fas fa-envelope"></i> Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu-container">
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Buscar platillos...">
+        </div>
+      </div>
+      <div class="filter-container">
+        <button class="filter-btn active" data-category="todos">Todos</button>
+        <button class="filter-btn" data-category="pizzas">Pizzas</button>
+        <button class="filter-btn" data-category="hamburguesas">
+          Hamburguesas
+        </button>
+        <button class="filter-btn" data-category="tacos">Tacos</button>
+        <button class="filter-btn" data-category="burritos">Burritos</button>
+        <button class="filter-btn" data-category="tipicos">
+          Platos Típicos
+        </button>
+        <button class="filter-btn" data-category="bebidas">Bebidas</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Menu items will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="js/productos.js"></script>
+    <script src="js/utils/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Delicious Food Spot</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Delicious</a>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="menu.html"><i class="fas fa-utensils"></i> Menú</a>
+        </li>
+        <li>
+          <a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="contact-hero">
+      <div class="hero-content">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para atenderte</p>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <div class="contact-details">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Calle Principal #123, La
+            Romana
+          </p>
+          <p><i class="fas fa-phone"></i> (809) 555-0123</p>
+          <p><i class="fas fa-envelope"></i> info@delicious.com</p>
+          <p><i class="fas fa-clock"></i> Lun-Dom: 11:00 AM - 10:00 PM</p>
+        </div>
+        <div class="social-links" style="margin-top: 30px">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Envíanos un mensaje</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="location-section">
+      <h2>¿Dónde encontrarnos?</h2>
+      <div class="location-container">
+        <div class="map-container">
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5367094776896!2d-69.34998468255615!3d18.42744998744852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf5c7c6e9de71f%3A0xbc6527622c8d1toward!2sLa%20Romana%2C%20Dominican%20Republic!5e0!3m2!1sen!2s!4v1635959882847!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Horarios de Atención</h3>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p>Lunes a Viernes: 11:00 AM - 10:00 PM</p>
+              <p>Sábado y Domingo: 12:00 PM - 11:00 PM</p>
+              <p>Feriados: 12:00 PM - 9:00 PM</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Cómo Llegar</h3>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p>- A 5 minutos de la Plaza Central</p>
+              <p>- Rutas de autobús: 101, 202, 303</p>
+              <p>- Estacionamiento disponible</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Servicios Adicionales</h3>
+              <i class="fas fa-chevron-down accordion-icon"></i>
+            </div>
+            <div class="accordion-content">
+              <p>- WiFi gratuito</p>
+              <p>- Área de juegos infantiles</p>
+              <p>- Terraza al aire libre</p>
+              <p>- Acceso para discapacitados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Sección de nuestro equipo -->
+
+     <section class="team-section">
+      <h2>Conoce a Nuestro Equipo</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Moises.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Moises Alexander</h3>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Johan.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Johan Daniel</h3>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Maicol.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Maicol David</h3>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Jose.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Jose Alexander</h3>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Luis.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Luis Angel</h3>
+        </div>
+        <div class="team-member">
+          <img
+            src="./imagenes/Equipo/Roberto.jpg"
+            alt="Miembro del Equipo"
+            class="team-photo-horizontal"
+          />
+          <h3>Roberto Nieves</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección de chat simulado -->
+    <section class="quick-contact">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <div class="quick-contact-container">
+        <div class="chat-container">
+          <!-- Conversación 1 -->
+          <div class="chat-slide active">
+            <div class="chat-message bot-message">
+              ¡Hola! ¿En qué puedo ayudarte?
+            </div>
+            <div class="chat-message user-message">
+              ¿Hacen entregas a domicilio?
+            </div>
+            <div class="chat-message bot-message">
+              ¡Sí! Entregamos en 30-45 minutos según tu ubicación.
+            </div>
+          </div>
+
+          <!-- Conversación 2 -->
+          <div class="chat-slide">
+            <div class="chat-message bot-message">
+              ¿Tienes dudas sobre el menú?
+            </div>
+            <div class="chat-message user-message">
+              ¿Tienen opciones vegetarianas?
+            </div>
+            <div class="chat-message bot-message">
+              ¡Sí! Tenemos pizzas y hamburguesas vegetarianas.
+            </div>
+          </div>
+
+          <!-- Conversación 3 -->
+          <div class="chat-slide">
+            <div class="chat-message bot-message">
+              ¿Necesitas hacer una reserva?
+            </div>
+            <div class="chat-message user-message">
+              ¿Puedo reservar para grupo?
+            </div>
+            <div class="chat-message bot-message">
+              ¡Claro! Para grupos +8 personas, reserva con 24h.
+            </div>
+          </div>
+
+          <!-- Controles del carrusel -->
+          <div class="chat-controls">
+            <span class="chat-dot active"></span>
+            <span class="chat-dot"></span>
+            <span class="chat-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/utils/contacto.js"></script>
+  </body>
+</html>
